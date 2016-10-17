@@ -28,6 +28,8 @@ print('Hello', 'world')  # read instruction above and write this code
 ## Take your name as input and output the following line:
 ##   Hello <NAME>. Welcome to the world of python.
 
+name = input('please enter your name')
+print('Hello %s, welcome to the world of python' %(name))
 
 
 ################################################################################
@@ -40,7 +42,10 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   5. If you deposit $7500 in a bank with annual interest rate of 5%, how much
 ##      you can get after 5 years.
 
-
+print(5<<3)
+print(5*(2**3))
+print(1024>>3)
+print(1024/(2**3))
 
 ################################################################################
 ## 3 Bit operations
@@ -54,6 +59,10 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   7. 15 ^ 9 = ?
 ##   8. 9 | 10 | (11 & 12) = ?
 
+print(15|9)
+print(15&9)
+print(15^9)
+print(9|10|(11&12))
 
 
 ################################################################################
@@ -64,6 +73,13 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   I'm <NAME>
 ##   I'm a <GENDER>
 ##   I work at <COMPANY> as a <TITLE>
+name = input('please enter your name')
+print('I am', name)
+gender = input('please enter your gender')
+print('I am', gender)
+company = input('please enter your company')
+title = input('please enter your title')
+print('I work at %s, as a %s' %(company,title))
 
 
 
@@ -80,3 +96,7 @@ print('Hello', 'world')  # read instruction above and write this code
 ##
 ## Use the same method to find out the largest integers (unsigned) which 16-bit, 32-bit and
 ## 64-bit data can hold.
+print(1<<8-1)
+print(1<<16-1)
+print(1<<32-1)
+print(1<<64-1 )
