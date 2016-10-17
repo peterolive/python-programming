@@ -83,7 +83,17 @@ print('Your income is %s, your tax is %s'%(income, tax))
 ## They are the same in effect, but it's simpler in coding. Your task is to compute
 ## the following lines with combined operator, such as +=, -=, *=, /=, **=, |=, &=, ^=, %=
 ##   1. x = x + 5  (already given)
+x = 0
+x = x + 5
+print(x)
+x = 0
+x += 5
+print(x)
+
 ##   2. x = x - 5
+x = 0
+x -=5
+print(x)
 ##   3. x = x * 16
 ##   4. x = x / 16
 ##   5. x = x ** 5

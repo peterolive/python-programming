@@ -42,10 +42,12 @@ print('Hello %s, welcome to the world of python' %(name))
 ##   5. If you deposit $7500 in a bank with annual interest rate of 5%, how much
 ##      you can get after 5 years.
 
-print(5<<3)
-print(5*(2**3))
-print(1024>>3)
-print(1024/(2**3))
+print(2**5)
+print((1+2)*3/4-5/(6+7)*8-9)
+print(1/6)
+print(2*(10+15))
+print(7500+7500*0.05*5)
+
 
 ################################################################################
 ## 3 Bit operations
@@ -59,6 +61,10 @@ print(1024/(2**3))
 ##   7. 15 ^ 9 = ?
 ##   8. 9 | 10 | (11 & 12) = ?
 
+print(5<<3)
+print(5*(2**3))
+print(1024>>3)
+print(1024/(2**3))
 print(15|9)
 print(15&9)
 print(15^9)
@@ -74,9 +80,9 @@ print(9|10|(11&12))
 ##   I'm a <GENDER>
 ##   I work at <COMPANY> as a <TITLE>
 name = input('please enter your name')
-print('I am', name)
+print('I''\'m', name)
 gender = input('please enter your gender')
-print('I am', gender)
+print('I''\'m', gender)
 company = input('please enter your company')
 title = input('please enter your title')
 print('I work at %s, as a %s' %(company,title))
