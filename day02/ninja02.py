@@ -83,24 +83,32 @@ print('Your income is %s, your tax is %s'%(income, tax))
 ## They are the same in effect, but it's simpler in coding. Your task is to compute
 ## the following lines with combined operator, such as +=, -=, *=, /=, **=, |=, &=, ^=, %=
 ##   1. x = x + 5  (already given)
-x = 0
+x = 2
 x = x + 5
 print(x)
-x = 0
+x = 2
 x += 5
 print(x)
 
 ##   2. x = x - 5
-x = 0
-x -=5
+x = 2
+x -= 5
 print(x)
 ##   3. x = x * 16
+x *= 16
 ##   4. x = x / 16
+x /= 16
 ##   5. x = x ** 5
+x **= 5
 ##   6. x = x | 5
+x = 5
+x |= 5
 ##   7. x = x & 4
+x &= 4
 ##   8. x = x ^ 7
+x ^= 7
 ##   9. x = x % 2  # div mod operation
+x %= 2
 ## Feel free to print each intermediate result after each computation.
 
 x = 2
@@ -125,10 +133,27 @@ x += 5
 ##   https://docs.python.org/3.5/library/functions.html
 ## Your task in the part, use the built-in function to find out the following information
 ##   1. Convert number 123 to float/string/bool, print the value and type of each variable
+print(float(123))
+print(str(123))
+print(bool(123))
+
 ##   2. Convert number 1.234567e3 to int, print value and type of variable
+print(int(1.234567e3))
+print(type(int(1.234567e3)))
+
+
 ##   3. Find binary/octal/hexical representation of integer 123 (decimal)
+print(bin(123))
+print(oct(123))
+print(hex(123))
 ##   4. Find absolute value of -7, 0, 13
+print(abs(-7))
+print(abs(0))
+print(abs(13))
 ##   5. Find max/min value among 13, 22, -5, 73, 0, 3, -17
+a = [13, 22, -5, 73, 0, 3, -17]
+print(max(a))
+print(min(a))
 
 
 
@@ -141,6 +166,25 @@ x += 5
 ## If n is even and greater than 20, print Not Weird
 
 n = 19
+if n%2 == 1:
+    print('Weird')
+
+n = 19
+if n%2 == 0 and 2 <= n <=5:
+    print('Not Weird')
+
+n = 19
+if n%2 == 0 and 6 <= n <= 20:
+    print('Weird')
+
+n = 19
+if n%2 == 0 and n > 20:
+    print('Not Weird')
+
+
+
+
+
 
 ################################################################################
 ## 6 Format string
@@ -158,8 +202,19 @@ print(s)
 ##
 ## Your task is to use format string to output the following information
 ##   1. Date format MM/DD/YYYY, e.g. 02/07/2016  (format: '%02d/%02d/%04d')
+MM = 2
+DD = 7
+YYYY = 2016
+print('%02d/%02d/%04d' %(MM, DD, YYYY))
+
 ##   2. Time format HH:mm:ss, e.g. 21:08:13
+HH = 21
+mm = 8
+ss = 13
+print('%02d:%02d:%02d' %(HH, mm, ss))
+
 ##   3. Use %s for all, if there is no special requirement for output format
 ##      of numbers, use %s for all of them is most simple way, just try:
 ##      'int: %s  float: %s  string: %s  bool: %s  none: %s'%(
 ##      123, 123.001, 'apple', True, None)
+print('int: %s float: %s string: %s bool: %s none: %s' %(123,123.001,'apple', True, None))
