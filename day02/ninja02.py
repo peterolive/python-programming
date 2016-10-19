@@ -134,14 +134,17 @@ x += 5
 ## Your task in the part, use the built-in function to find out the following information
 ##   1. Convert number 123 to float/string/bool, print the value and type of each variable
 print(float(123))
+print(type(float(123)))
 print(str(123))
+print(type(str(123)))
 print(bool(123))
+print(type(bool(123)))
 
 ##   2. Convert number 1.234567e3 to int, print value and type of variable
 print(int(1.234567e3))
 print(type(int(1.234567e3)))
 
-
+   
 ##   3. Find binary/octal/hexical representation of integer 123 (decimal)
 print(bin(123))
 print(oct(123))
