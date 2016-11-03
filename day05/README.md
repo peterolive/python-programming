@@ -14,7 +14,3 @@
 ## Understand how data are stored
 
 ## Dead loop
-
-## File read/write
-
-## with
